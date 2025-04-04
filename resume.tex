@@ -1,0 +1,244 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize} \vspace{-4pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Jai Kumar Dewani} \\ \vspace{1pt}
+    % 123 Street Name, Town, State 12345 \\ 
+    \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ 9340422023 ~ 
+    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:jai.dewani.99@gmail.com}{ jai.dewani.99@gmail.com} ~ 
+    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/jai-dewani/}{ linkedin.com/in/jai-dewani}  ~
+    \raisebox{-0.2\height}\faGithub\ \href{https://github.com/jai-dewani}{ github.com/jai-dewani}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Carl Zeiss - Vision Care R\&D and Technologies}{July 2022 -- Present}
+      {Design Engineer}{Bengaluru, Karnataka, India}
+      % \vspace{-8pt}
+      \resumeItemListStart
+        \resumeItem{Owned product and spearheaded the development of the Visual Acuity testing module, overseeing its \textbf{market release}}
+        \resumeItem{Collaborated with hiring managers to successfully recruit top-tier entry-level and experienced developers, enhancing the talent pool for our team and division.}
+        \resumeItem{Enforced atomic operations, streamlining complexity and reducing cognitive complexity}
+        \resumeItem{Executed migration of product from .NET Framework to .NET Core, improving performance, eliminating dependency on obsolete libraries blocking future development}
+        \resumeItem{Streamlined request handling efficiency through the design of a queuing mechanism in the response handler, achieving a \textbf{40\% reduction in click-to-response time} over multiple clicks}
+
+      \resumeItemListEnd
+
+    \vspace{3pt}
+    
+    \resumeSubheading
+      {Carl Zeiss - Vision Care R\&D and Technologies }{June 2021 - June 2022}
+      {Software Engineer}{Bengaluru, Karnataka, India}
+      % \vspace{-8pt}
+      \resumeItemListStart
+        \resumeItem{Empowered team agility with advanced development strategies, refined hardware mocking to reduce device reliance}
+        \resumeItem{Boosted testing and code quality through PR checks using static analyzers and rigorous code reviews}
+        \resumeItem{Aligned cross-functional teams to define and seamlessly integrate API requirements, ensuring clean and extensible code}
+        \resumeItem{Created IPC channel protocols and integrated gRPC to mitigate coupling and optimize communication across services}
+        \resumeItem{Utilized NUnit and Fluent Assertions to develop new unit tests, helping improve the overall development cycle}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology, Naya Raipur}{August '17 -- June '21}
+      {Bachelor of Technology in Computer Science}{Naya Raipur, Chhattisgarh India}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-2pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{VISUCORE 500} $|$ \emph{C\#, Angular}  $|$ \href{https://www.zeiss.com/vision-care/int/eye-care-professionals/equipment/refraction/combined-refraction-unit.html}{Zeiss VISUCORE 500}}{Jan 2021 - Current}
+            \resumeItemListStart
+                \resumeItem{Owned the development of visual acuity testing module for it's first and second market release}
+                \resumeItem{Collaborated with Product team to transfer Refraction module and reduce turn around time by enhancing \textbf{performance of workflow by 28\%} through restructuring the application response keeping asynchronous design principles at the center}
+                \resumeItem{Decomposed the monolithic architecture into 3 micro services communicating via gRPC to minimize coupling}
+                \resumeItem{Ensured secure and robust code quality by following best code quality \& style analyzers set by Roslyn}
+                \resumeItem{Mastered end-to-end product life cycle and Agile methodologies}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{VISUSCREEN 100/500} $|$ \emph{C\#, HTML, CSS, JS}  $|$ \href{https://www.zeiss.com/vision-care/int/eye-care-professionals/equipment/refraction/subjective-refraction-unit.html}{Zeiss VISUSCREEN 100/500}}{June 2023 - August 2023}
+            \resumeItemListStart
+                \resumeItem{Implemented a lock and release mechanism to ensure a maximum of one connection to critical communication channels, ensuring system stability}
+                \resumeItem{Produced comprehensive system software integration documentation to facilitate the seamless release of software changes into the market}
+                \resumeItem{Mastered end-to-end product life cycle and Agile methodologies}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{FunMark} $|$ \emph{Python} $|$ \href{https://github.com/jai-dewani/fun-mark}{GitHub}}{May 2020} 
+            \resumeItemListStart
+                \resumeItem{Developed a zero-overhead wrapper to benchmark and visually depict function performance.}
+                \resumeItem{Released on PyPi package manager to be easily accessible with pip with currently over 6K downloads}
+                \resumeItem{Documented the process on how to utilize the library efficiently on \href{https://jai-dewani.github.io/blogs/fun-mark/}{jai-dewani.github.io/blogs/fun-mark/}}
+            \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \textbf{Languages \& Frameworks}{: C\#, .NET, Angular, JavaScript, Python} \\
+     \vspace{1pt}
+     \textbf{Developer Tools}{: Azure, MSBuild, MySQL, SonarQube, Docker, CI/CD, Git} \\
+     \vspace{1pt}
+     \textbf{Technologies}{: ASP.NET, .NET Core, WPF, gRPC, Node.js, Angular, React} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------INVOLVEMENT---------------
+\section{ACADEMIC ACHIEVEMENTS \& EXTRA-CURRICULAR}
+
+\begin{itemize}[leftmargin=0.2in]
+  \achievementItem{\textbf{Mentored and Judged over 50+ teams} in various hackathons like HackCBS 4.0, HacckOn 2.0 and DotSlash 4.0}
+  \achievementItem{\textbf{Co-founded}  the  first  technical  club  at  IIIT-NR,  organized  various  events, talks and hackathons to  promote competitive programming and development while improve the coding environment of the Institute.}
+  \achievementItem{Ranked \textbf{1127\textsuperscript{th}} globally and \textbf{115\textsuperscript{th}} in India in Google HashCode, out of 10724 teams}
+  \achievementItem{Qualified ACM-ICPC 2020 in Kanpur(\textbf{rank 63}) and Gwalior regions}
+  \achievementItem{Qualified ACM-ICPC 2019 in Kharagpur(\textbf{rank 81}) and Amritapuri(\textbf{rank 37}) regions.}
+\end{itemize}
+
+
+\end{document}
